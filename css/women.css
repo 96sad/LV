@@ -1,0 +1,507 @@
+@import url('https://fonts.googleapis.com/css2?family=Unna&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+::-webkit-scrollbar
+{
+    width: 10px;
+}
+::-webkit-scrollbar-track
+{
+    background: #000000;
+    border-left: 1px solid #9a96e8;
+}
+::-webkit-scrollbar-thumb
+{
+    background: #848484;
+}
+::-webkit-scrollbar-thumb:hover
+{
+    --golden-puppy:hsl(0, 0%, 40%);
+}
+::-webkit-scrollbar-button
+{
+    height: 5px;
+}
+body
+{
+    font-family: 'Unna', serif;
+    background: rgb(246, 246, 246);
+}
+ /* navbar */
+.navbar
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 20px 50px;
+  position: relative;
+}
+.logo
+{
+  width: 165px;
+  height: 45px;
+}
+.toggle-button
+{
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+.toggle-button .bar
+{
+  width: 35px;
+  height: 4px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  margin: 3px 0px;
+}
+.nav-links
+{
+  list-style: none;
+  display: flex;
+}
+.nav-links li 
+{
+  margin:25px;
+}
+.nav-links li a
+{
+  font-size: 1.5rem;
+  color: #000000;
+  text-decoration: none;
+  transition: 0.4s ease;
+}
+.nav-links li a:hover
+{
+  color: #f30000;
+}
+
+/* other content */
+.lower-section{
+          margin-top: 60px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+  }
+  
+  .lower-section-ul{
+    justify-content:center;
+    align-items: center;
+    gap: 25px;
+  }
+  
+  .card-item{
+    list-style: none;
+  }
+  
+  .card-container{
+    background-color: #f8f8f8;
+    padding: 10px;
+    border-radius: 10px;
+    border:1px groove #3d3d3d;
+    width: 1200px;
+  }
+  
+  
+  .card-banner-container{
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    height: 500px;
+  }
+  
+  .card-banner-container img{
+    height:100%;
+    width: 100%;
+    object-fit:cover;
+    filter: grayscale(100%);
+    transition: 0.5s ease;
+    cursor: pointer;
+  }
+  .card-banner-container img:hover
+  {
+    transform: scale(1.4);
+    transition: 0.5s ease;
+    filter: grayscale(0%);
+  }
+  .a-links
+  {
+    list-style: none;
+    width: 250px;
+    height: 30px;
+    color: rgb(1, 1, 1);
+    border-radius: 30px;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+    .a-links:hover
+    {
+      background-color: #181818;
+      color: #ffffff;
+      border: 1px solid #000000;
+    }
+  .card-banner-action{
+    top:50px;
+    right:20px;
+    left: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .btn-menu-bar{
+    background-color: #d88b2a;
+    border: none;
+    outline: none;
+    height:25px;
+    width:25px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .btn-heart{
+    background-color: #3d3d3d;
+    border: none;
+    outline: none;
+    height:50px;
+    width:50px;
+    font-size: 1.7rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(253, 253, 253);
+  }
+  
+  .btn-heart.active
+  {
+    color: red;
+  }
+
+  .card-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 20px;
+  }
+  
+  .card-title{
+    color:rgb(0, 0, 0);
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .desc-p
+  {
+    color: #000000;
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration:underline ;
+  }
+.footer
+{
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 80px;
+  border-top: #000000 groove 1px;
+}
+.footer-content
+{
+  width: 33%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.class-head
+{
+  color: #000000;
+  font-size: 15px;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+.footer-service
+{
+  font-size: 25px;
+  color: #000000;
+  font-weight: 500;
+  text-align: center;
+  text-transform: capitalize;
+}
+.footer-list
+{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+  color: #000000;
+  font-weight: 500;
+  text-align: center;
+  text-transform: capitalize;
+  line-height: 50px;
+}
+li
+{
+  font-size: 18px;
+}
+li:hover
+{
+  color: #ff0808;
+  cursor: pointer;
+}
+.footer-about
+
+{
+  font-size: 20px;
+  color: #000000;
+  font-weight: 500;
+  text-align: center;
+  text-transform: capitalize;
+}
+.copyright
+{
+  width: 100%;
+  height: 100px;
+  border: #000000 groove 1px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.copyright-text
+{
+  width: 100px;
+  height: 50px;
+  font-size: 17px;
+  display: inline-block;
+  color: #000000;
+}
+.copyright-text1
+{
+  width: 1200px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-evenly;
+  align-items: center;
+  color: #000000;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.flag
+{
+  text-decoration: underline;
+  color: #000000;
+}
+.flag:hover
+{
+  color: #ff0808;
+}
+.name-vuitton
+{
+  width: 100%;
+  height: 100px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hov:hover
+{
+  color: #ff0808;
+  cursor: pointer;
+}
+.ho:hover
+{
+  color: #ff0808;
+  cursor: pointer;
+}
+.hover:hover
+{
+  color: #ff0808;
+  cursor: pointer;
+}
+.hver:hover
+{
+  color: #ff0808;
+  cursor: pointer;
+}
+.hv:hover
+{
+  color: #ff0808;
+  cursor: pointer;
+}
+
+ @media screen and (min-width: 390px) and (max-width: 991px)
+{
+  .navbar
+  {
+    padding:20px 25px ;
+    background-color: #000000;
+  }
+  .toggle-button
+  {
+    display: flex;
+  }
+  .nav-links li a
+  {
+    color: wheat;
+    font-size: 22px;
+    text-decoration: underline;
+  }
+  .nav-links
+  {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    background-color: #000000;
+    padding: 25px;
+    top: 100%;
+    left: 0;
+  }
+  .nav-links li
+  {
+    padding: 12px 0px;
+  }
+  .nav-links.active
+  {
+    display: block;
+  }
+  /* other content */
+  .lower-section{
+          flex-direction: column;
+          height: 1000px;
+  }
+  
+  .lower-section-ul{
+    flex-direction: column;
+  }
+  
+  .card-item{
+    list-style: none;
+  }
+  
+  .card-container{
+    width: 350px;
+  }
+  
+  
+  .card-banner-container{
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    height: 400px;
+  }
+  
+  .card-title{
+    color:rgb(0, 0, 0);
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .desc-p
+  {
+    color: #000000;
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration:underline ;
+  }
+.footer
+{
+  width: 400px;
+  height: 1800px;
+  flex-direction: column;
+}
+.footer-content
+{
+  height: 600px;
+}
+.class-head
+{
+  margin-top: 20px;
+  font-size: 1.5rem;
+}
+.footer-service
+{
+  font-size: 2.7rem;
+   margin-top: 40px;
+  margin-bottom: 40px;
+}
+.footer-list li
+{
+  font-size: 1.2rem;
+}
+li
+{
+  font-size: 1.2rem;
+}
+li:hover
+{
+  color: #ff0808;
+  cursor: pointer;
+}
+.footer-about
+
+{
+  font-size: 2.7rem;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.copyright
+{
+  height: 500px;
+  flex-direction: column;
+}
+.copyright-text
+{
+  height: 100px;
+  font-size: 1.1rem;
+}
+.copyright-text1
+{
+  width: 400px;
+  height: 400px;
+  flex-direction: column;
+  font-size: 1.4rem;
+}
+.flag
+{
+  text-decoration: underline;
+  color: #000000;
+}
+.flag:hover
+{
+  color: #ff0808;
+}
+.name-vuitton
+{
+  height: 200px;
+  flex-direction: column;
+  font-size: 1.2rem;
+  text-align: center;
+}
+}

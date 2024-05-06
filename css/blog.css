@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Unna&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Unna', serif;
+}
+
+::-webkit-scrollbar
+{
+    width: 10px;
+}
+::-webkit-scrollbar-track
+{
+    background: #000000;
+    border-left: 1px solid #9a96e8;
+}
+::-webkit-scrollbar-thumb
+{
+    background: #848484;
+}
+::-webkit-scrollbar-thumb:hover
+{
+    --golden-puppy:hsl(0, 0%, 40%);
+}
+::-webkit-scrollbar-button
+{
+    height: 5px;
+}
+body
+{
+    background: rgb(246, 246, 246);
+}
+ /* navbar */
+.navbar
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 20px 50px;
+  position: relative;
+  border-bottom: 1px solid #000000;
+}
+.logo
+{
+  width: 165px;
+  height: 45px;
+}
+.toggle-button
+{
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+.toggle-button .bar
+{
+  width: 35px;
+  height: 4px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  margin: 3px 0px;
+}
+.nav-links
+{
+  list-style: none;
+  display: flex;
+}
+.nav-links li 
+{
+  margin:25px;
+}
+.nav-links li a
+{
+  font-size: 1.5rem;
+  color: #000000;
+  text-decoration: none;
+  transition: 0.4s ease;
+}
+.nav-links li a:hover
+{
+  color: #f30000;
+}
+/* other content */
+ .heading-content
+  {
+    width: auto;
+    height: auto;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  h1
+  {
+    font-size: 4rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  .carousel
+  {
+    height: 600px;
+    perspective: 250px;
+  }
+  .carousel .carousel-item
+  {
+    width: 450px;
+    background-color: #000000;
+    padding: 50px;
+    height: auto;
+    text-align: center;
+    border-radius: 15px;
+  }
+  .img-area
+  {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 50%;
+    border: inset 8px rgb(237, 237, 237);
+  }
+  .img-area img
+  {
+    width: 100%;
+  }
+  .test1 p
+  {
+    color: #ffffff;
+    font-size:18px;
+    line-height: 1.9;
+    border-bottom: 1px solid #ffffff;
+  }
+  .test1 h4
+  {
+    font-size: 20px;
+    margin: 0;
+    color: #ffffff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 15px;
+    padding: 10px;
+
+  }
+  .test1 h5
+  {
+    font-size: 20px;
+    letter-spacing: 5px;
+    margin: 7px 0;
+    color: #fff;
+  }
+    .footer
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 50px;
+  }
+  .footer-text
+  {
+    color: #ececec;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+  }
+
+ @media screen and (min-width: 390px) and (max-width: 991px)
+{
+  .navbar
+  {
+    padding:20px 25px ;
+    background-color: #000000;
+  }
+  .toggle-button
+  {
+    display: flex;
+  }
+  .nav-links li a
+  {
+    color: wheat;
+    font-size: 22px;
+    text-decoration: underline;
+  }
+  .nav-links
+  {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    background-color: #000000;
+    padding: 25px;
+    top: 100%;
+    left: 0;
+  }
+  .nav-links li
+  {
+    padding: 12px 0px;
+  }
+  .nav-links.active
+  {
+    display: block;
+  }
+   .heading-content
+  {
+    width: auto;
+    height: auto;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  h1
+  {
+    font-size: 3rem;
+  }
+  .carousel
+  {
+    height: 1300px;
+    perspective: 300px;
+  }
+  .carousel .carousel-item
+  {
+    width: 350px;
+    background-color: #000000;
+    padding: 50px;
+    height: auto;
+    text-align: center;
+    border-radius: 30px;
+  }
+  .img-area
+  {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 50%;
+    border: inset 5px rgb(237, 237, 237);
+  }
+  .img-area img
+  {
+    width: 100%;
+  }
+  .test1 p
+  {
+    color: #ffffff;
+    font-size:1.1rem;
+  }
+  .test1 h4
+  {
+    font-size: 1.2rem;
+    margin: 0;
+    color: #ffffff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 15px;
+    padding: 10px;
+
+  }
+  .test1 h5
+  {
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+    margin: 7px 0;
+    color: #fff;
+  }
+    .footer
+  {
+    height: 100px;
+  }
+  .footer-text
+  {
+    color: #ececec;
+    font-size: 1.3rem;
+  }
+}
+ 

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="css/blog.css" type="text/css">
+</head>
+
+<body>
+
+    <!-- <--Navbar-->
+    <div class="navbar">
+        <!-- <--Logo-->
+        <div>
+            <a href="#"><img src="img/logo.png" alt="logo" class="logo"></a>
+        </div>
+<div class="toggle-button" id="toggleButton">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Service</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="blog.html">Blog</a></li>
+
+        </ul>
+    </div>
+
+    <div class="heading-content">
+        <h1>Our Blog</h1>
+    </div>
+
+    <div class="carousel">
+        <a class="carousel-item" href="#">
+            <div class="test1">
+                <div class="img-area">
+                    <img src="img/im5.jpg" alt="">
+                </div>
+                <p>Louis Vuitton was a French fashion designer and businessman. He was the founder of the Louis Vuitton
+                    brand of leather
+                    goods now owned by LVMH.</p>
+                <h4>Jamie Jones</h4>
+                <h5>Designer</h5>
+            </div>
+        </a>
+        <a class="carousel-item" href="#">
+            <div class="test1">
+                <div class="img-area">
+                    <img src="img/im6.jpg" alt="">
+                </div>
+                <p>Louis Vuitton was a French fashion designer and businessman. He was the founder of the Louis Vuitton
+                    brand of
+                    leather
+                    goods now owned by LVMH.</p>
+                <h4>Mathilda Maines</h4>
+                <h5>Artist</h5>
+            </div>
+        </a>
+        <a class="carousel-item" href="#">
+            <div class="test1">
+                <div class="img-area">
+                    <img src="img/im7.jpg" alt="">
+                </div>
+                <p>Louis Vuitton was a French fashion designer and businessman. He was the founder of the Louis Vuitton
+                    brand of
+                    leather
+                    goods now owned by LVMH.</p>
+                <h4>Suzzi Pols</h4>
+                <h5>Senior Designer</h5>
+            </div>
+        </a>
+    </div>
+        <div class="footer">
+            <p class="footer-text">Copyright © 2021 louisevuitton All rights reserved.</p>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+                $(document).ready(function () {
+                        $('.carousel').carousel({
+                            padding: 200
+                        });
+                        autoplay();
+                        function autoplay() {
+                            $('.carousel').carousel('next');
+                            setTimeout(autoplay, 4500);
+                        }
+                    });
+    </script>
+    <script src="main.js"></script>
+</body>
+
+</html>

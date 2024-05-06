@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Unna&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Unna', serif;
+}
+
+::-webkit-scrollbar
+{
+    width: 10px;
+}
+::-webkit-scrollbar-track
+{
+    background: #000000;
+    border-left: 1px solid #9a96e8;
+}
+::-webkit-scrollbar-thumb
+{
+    background: #848484;
+}
+::-webkit-scrollbar-thumb:hover
+{
+    --golden-puppy:hsl(0, 0%, 40%);
+}
+::-webkit-scrollbar-button
+{
+    height: 5px;
+}
+body
+{
+    background: rgb(246, 246, 246);
+}
+ /* navbar */
+ .navbar
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 20px 50px;
+  position: relative;
+  border-bottom: 1px solid #000000;
+}
+.logo
+{
+  width: 165px;
+  height: 45px;
+}
+.toggle-button
+{
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+.toggle-button .bar
+{
+  width: 35px;
+  height: 4px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  margin: 3px 0px;
+}
+.nav-links
+{
+  list-style: none;
+  display: flex;
+}
+.nav-links li 
+{
+  margin:25px;
+}
+.nav-links li a
+{
+  font-size: 1.5rem;
+  color: #000000;
+  text-decoration: none;
+  transition: 0.4s ease;
+}
+.nav-links li a:hover
+{
+  color: #f30000;
+}
+/* other content */
+  .main-content-container
+  {
+    display:inline-flexbox;
+    justify-content:space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 800px;
+    background: #dfdfdf;
+    padding: 20px;
+  }
+  .main-content-text
+  {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #000000;
+    text-align: center;
+    padding: 20px;
+    text-transform: capitalize;
+  }
+  .main-content-desc
+  {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    border: 10px groove #ffffff;
+    margin-bottom: 40px;
+    width: 100%;
+    height: 800px;
+    background-color: #0c0c0c;
+  }
+
+ @media screen and (min-width: 390px) and (max-width: 991px)
+{
+  .navbar
+  {
+    padding:20px 25px ;
+    background-color: #000000;
+  }
+  .toggle-button
+  {
+    display: flex;
+  }
+  .nav-links li a
+  {
+    color: wheat;
+    font-size: 22px;
+    text-decoration: underline;
+  }
+  .nav-links
+  {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    background-color: #000000;
+    padding: 25px;
+    top: 100%;
+    left: 0;
+  }
+  .nav-links li
+  {
+    padding: 12px 0px;
+  }
+  .nav-links.active
+  {
+    display: block;
+  }
+  /* other content */
+    .main-content-container
+  {
+    flex-direction: column;
+    height: 1600px;
+  }
+  .main-content-text
+  {
+    font-size: 2rem;
+  }
+  .main-content-desc
+  {
+    font-size: 1rem;
+    height: 3100px;
+    text-align: justify;
+  }
+}

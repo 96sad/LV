@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Buda:wght@300&family=Ruluko&family=Unna&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Buda', serif;
+}
+
+::-webkit-scrollbar
+{
+    width: 10px;
+}
+::-webkit-scrollbar-track
+{
+    background: #000000;
+    border-left: 1px solid #9a96e8;
+}
+::-webkit-scrollbar-thumb
+{
+    background: #848484;
+}
+::-webkit-scrollbar-thumb:hover
+{
+    --golden-puppy:hsl(0, 0%, 40%);
+}
+::-webkit-scrollbar-button
+{
+    height: 5px;
+}
+body
+{
+    background: rgb(246, 246, 246);
+}
+ /* navbar */
+.navbar
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 20px 50px;
+  position: relative;
+  border-bottom: 1px solid #000000;
+}
+.logo
+{
+  width: 165px;
+  height: 45px;
+}
+.toggle-button
+{
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+.toggle-button .bar
+{
+  width: 35px;
+  height: 4px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  margin: 3px 0px;
+}
+.nav-links
+{
+  list-style: none;
+  display: flex;
+}
+.nav-links li 
+{
+  margin:25px;
+}
+.nav-links li a
+{
+  font-size: 1.5rem;
+  color: #000000;
+  text-decoration: none;
+  transition: 0.4s ease;
+}
+.nav-links li a:hover
+{
+  color: #f30000;
+}
+/* other content */
+  .contact-item
+  {
+    display: flex;
+    justify-content:left;
+    align-items:flex-start;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 50px;
+    padding: 10px 50px;
+    width: 100%;
+    height: 150px;
+  }
+  .contact-title
+  {
+    color: #000000;
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    border-bottom: 1px groove #3d3d3d;
+  }
+  .contact-desc
+  {
+    color: #000000;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  .contact-box
+  {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-direction: row;
+  }
+  .box1
+  {
+    width: 350px;
+    height: 250px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .contact
+  {
+    color: #000000;
+    font-size: 2rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 1px groove #3d3d3d;
+      
+  }
+  .contact-descrip
+  {
+    color: #000000;
+    font-size: 1.3rem;
+    font-weight: 200;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .ic
+  {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  .description
+  {
+  
+    width: 100%;
+    height: 200px;
+    display: flex;
+   justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #000000;
+    margin-top: auto;
+  }
+  .de
+  {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border-top: #fff 1px solid;
+  }
+  .dp
+  {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border-bottom: #fff 1px solid;
+  }
+  .footer
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-text
+  {
+    color: #000000;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+  }
+
+ @media screen and (min-width: 390px) and (max-width: 991px)
+{
+  .navbar
+  {
+    padding:20px 25px ;
+    background-color: #000000;
+  }
+  .toggle-button
+  {
+    display: flex;
+  }
+  .nav-links li a
+  {
+    color: wheat;
+    font-size: 22px;
+    text-decoration: underline;
+  }
+  .nav-links
+  {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    background-color: #000000;
+    padding: 25px;
+    top: 100%;
+    left: 0;
+  }
+  .nav-links li
+  {
+    padding: 12px 0px;
+  }
+  .nav-links.active
+  {
+    display: block;
+  }
+    .contact-item
+  {
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    gap: 30px;
+    height: 250px;
+  }
+  .contact-title
+  {
+    font-size: 2.5rem;
+  }
+  .contact-desc
+  {
+    color: #000000;
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+  .contact-box
+  {
+    height: 850px;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .box1
+  {
+    width: 300px;
+    height: 300px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .contact
+  {
+    color: #000000;
+    font-size: 1.5rem;
+      
+  }
+  .contact-descrip
+  {
+    color: #000000;
+    font-size: 1.3rem;
+  }
+  .ic
+  {
+    font-size: 1.5rem;
+  }
+  .description
+  {
+    height: 400px;
+    gap: 20px;
+  }
+  .de
+  {
+    font-size: 1.4rem;
+  }
+  .dp
+  {
+    font-size: 1.5rem;
+  }
+  .footer
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-text
+  {
+    color: #000000;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: center;
+  }
+}
